@@ -1,0 +1,30 @@
+x_1 = return_(60*1)
+x_2 = return_(60*2)
+
+
+
+x_1.remove(max(x_1))
+x_1.remove(min(x_1))
+x_2.remove(max(x_2))
+x_2.remove(min(x_2))
+x_5.remove(max(x_5))
+x_5.remove(min(x_5))
+x_10.remove(max(x_10))
+x_10.remove(min(x_10))
+x_100.remove(max(x_100))
+x_100.remove(min(x_100))
+x_1day.remove(max(x_1day))
+x_1day.remove(min(x_1day))
+
+frame = pd.DataFrame({'x_1':x_1})
+frame.to_csv("x_1.csv",index = False , sep = ',')
+frame = pd.DataFrame({'x_2':x_2})
+frame.to_csv("x_2.csv",index = False , sep = ',')
+frame = pd.DataFrame({'x_5':x_5})
+frame.to_csv("x_5.csv",index = False , sep = ',')
+frame = pd.DataFrame({'x_10':x_10})
+frame.to_csv("x_10.csv",index = False , sep = ',')# index = False不写索引
+frame = pd.DataFrame({'x_100':x_100})
+frame.to_csv("x_100.csv",index = False , sep = ',')
+frame = pd.DataFrame({'x_1day':x_1day})
+frame.to_csv("x_1day.csv",index = False , sep = ',')
